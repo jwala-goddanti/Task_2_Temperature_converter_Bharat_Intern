@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightpink"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="197dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="502dp"
+        android:text="Hello! Enter the temperature"
+        android:textAlignment="textStart" />
+
+    <EditText
+        android:id="@+id/cel"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="245dp"
+        android:ems="10"
+        android:hint="Celsius"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/kel"
+        android:layout_width="209dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="318dp"
+        android:ems="10"
+        android:hint="Kelvin"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/faran"
+        android:layout_width="209dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="403dp"
+        android:ems="10"
+        android:hint="Fahrenheit"
+        android:inputType="textPersonName" />
+
+
+    <Button
+        android:id="@+id/btncel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="250dp"
+        android:layout_toRightOf="@id/cel"
+        android:onClick="convertTemperaturFromCelsius"
+        android:text="convert" />
+
+    <Button
+        android:id="@+id/clearbtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="480dp"
+        android:layout_toRightOf="@id/cel"
+        android:onClick="clearFunc"
+        android:text="clear" />
+
+    <Button
+        android:id="@+id/btnkel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="320dp"
+        android:layout_toRightOf="@id/kel"
+        android:onClick="convertTemperatureFromKel"
+        android:text="convert" />
+
+    <Button
+        android:id="@+id/btnfaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="390dp"
+        android:layout_toRightOf="@id/faran"
+        android:onClick="convertTemperatureFromFahrenheit"
+        android:text="convert" />
+
+
+</RelativeLayout>
